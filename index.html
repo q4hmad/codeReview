@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Palooza</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+    <h1>Pizza Palooza</h1>
+  </div>
+    <form id="topping_choices">
+      <h3>Select Toppings:</h3>
+
+        <div class="form-group">
+          <h4>Choose your toppings:</h4>
+        <input type="checkbox" name="topping-choices" value="Cheese">Cheese<br>
+        <input type="checkbox" name="topping-choices" value="Olives">Olives<br>
+        <input type="checkbox" name="topping-choices"value="Artichokes">Artichokes<br>
+        <input type="checkbox" name="topping-choices" value="Anchovies">Anchovies<br>
+        <input type="checkbox" name="topping-choices" value="Roasted garlic">Roasted Garlic<br>
+      </div>
+
+      <h3>Select Size:</h3>
+      <div class="radio">
+        <label>
+            <input type="radio" name="size" value="8" checked>
+            8 inch
+          </label>
+      </div>
+      <div class="radio">
+        <label>
+            <input type="radio" name="size" value="12">
+            12 inch
+          </label>
+      </div>
+      <div class="radio">
+        <label>
+            <input type="radio" name="size" value="16">
+            16 inch
+          </label>
+          <br>
+          <button type="submit" class="btn">Submit Order</button>
+      </div>
+
+    </form>
+    <div id="finalPrice">
+    </div>
+
+
+  </div>
+</body>
+
+</html>
